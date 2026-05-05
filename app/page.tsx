@@ -1,9 +1,21 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center text-white">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold">RafDev Portfolio</h1>
-        <p className="mt-4 opacity-70">Full Stack Developer</p>
+    <main className="page hero-page">
+      <div className="hero">
+        <h1 className="hero__title">Hi, I&apos;m Rafael</h1>
+        <p className="hero__subtitle">
+          Full Stack Developer building modern web apps with React, Next.js &amp; Node.js
+        </p>
+        <div className="hero__actions">
+          <Link href="/about" className="btn btn--primary">
+            About Me
+          </Link>
+          <Link href="/contact" className="btn btn--outline">
+            Contact Me
+          </Link>
+        </div>
       </div>
     </main>
   );
